@@ -2,7 +2,7 @@
 Chrome extension for finding label values by API Name
 
 #Installation 
-In Chrome-> Extensions click "Load unpackaged extensions..." and select the folder where the project files are stored.
+In Chrome go to : Settings-> Extensions click "Load unpackaged extensions..." and select the folder where the project files are stored.
 
 #Usage
 
