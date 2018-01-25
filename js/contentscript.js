@@ -24,17 +24,13 @@ function getInstanceUrl(){
 		instance = elements[1];
 	}
 	
-	//this.instanceUrl = "https://" + instance + ".salesforce.com";
 	this.instanceUrl = "https://"+location.hostname;
 	return (instanceUrl+"");
 	
 }
 
-/* Encapsulating code instead of just letting it lay about */
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-      console.log('test sent');
-	  console.log("instance"+getInstanceUrl());
       sendResponse({"instanceUrl": getInstanceUrl(),"accessToken":getValueFromCookie("sid")});
 
 });
